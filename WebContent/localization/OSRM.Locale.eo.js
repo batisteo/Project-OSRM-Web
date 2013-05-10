@@ -16,7 +16,7 @@ or see http://www.gnu.org/licenses/agpl.txt.
 */
 
 // OSRM localization
-// [French language support]
+// [Esperanto language support]
 
 
 OSRM.Localization["eo"] = {
@@ -37,11 +37,19 @@ OSRM.Localization["eo"] = {
 "GUI_ZOOM_IN": "Zomi",
 "GUI_ZOOM_OUT": "Malzomi",
 // config
-"GUI_CONFIGURATION": "Agordo",
+"GUI_CONFIGURATION": "Agordoj",
 "GUI_LANGUAGE": "Lingvo",
 "GUI_UNITS": "Unuoj",
 "GUI_KILOMETERS": "Kilometroj",
 "GUI_MILES": "Mejloj",
+// abbreviations
+"GUI_M": "m",
+"GUI_KM": "km",
+"GUI_MI": "mi",
+"GUI_FT": "ft",
+"GUI_H": "h",
+"GUI_MIN": "min",
+"GUI_S": "s",
 // mapping
 "GUI_MAPPING_TOOLS": "Mapaj iloj",
 "GUI_HIGHLIGHT_UNNAMED_ROADS": "Marki la statojn sen nomo",
@@ -69,11 +77,22 @@ OSRM.Localization["eo"] = {
 "OVERVIEW_MAP": "Mapo",
 "NO_ROUTE_SELECTED": "Neniu elektitaj itineroj",
 // routing engines
-"ENGINE_0": "aŭto (la plej rapide)",
+"ENGINE_0": "Aŭto (plej rapide)",
+// tile server names
+// (only required if names are different to OSRM.config)
+//"TILE_SERVER_0": "osm.org",
+//"TILE_SERVER_1": "osm.de",
+//"TILE_SERVER_2": "MapQuest",
+//"TILE_SERVER_3": "CloudMade",
+//"TILE_SERVER_4": "Bing Road",
+//"TILE_SERVER_5": "Bing Aerial",
+// overlay server names
+//(only required if names are different to OSRM.config)
+//"OVERLAY_SERVER_0": "Small Components",
 // directions
 "N": "nordo",
-"S": "sudo",
 "E": "oriento",
+"S": "sudo",
 "W": "okcidento",
 "NE": "nord-oriento",
 "SE": "sud-oriento",
@@ -81,6 +100,7 @@ OSRM.Localization["eo"] = {
 "NW": "nord-okcidento",
 // driving directions
 // %s: road name
+// %d: direction
 // [*]: will only be printed when there actually is a road name
 "DIRECTION_0":"Nekonata instrukcio[ en <b>%s</b>]",
 "DIRECTION_1":"Daŭrigu[ en <b>%s</b>]",
@@ -102,9 +122,35 @@ OSRM.Localization["eo"] = {
 "DIRECTION_11-8":"Al la trafikrondo, prenu la oka elirejo[ en <b>%s</b>]",
 "DIRECTION_11-9":"Al la trafikrondo, prenu la naŭa elirejo[ en <b>%s</b>]",
 "DIRECTION_11-x":"Al la trafikrondo, prenu unu el la tro multnombraj elirejoj[ en <b>%s</b>]",
-"DIRECTION_15":"Vi estas alveninta"
+"DIRECTION_15":"Vi atingis vian celon",
+// notifications
+"NOTIFICATION_MAINTENANCE_HEADER":	"Scheduled Maintenance",
+"NOTIFICATION_MAINTENANCE_BODY":	"The OSRM Website is down for a scheduled maintenance. " + 
+									"Please be patient while required updates are performed. " +
+									"The site will be back online shortly." +
+									"<br/><br/>" + 
+									"In the meantime you may want to go out an map a friendly neighborhood near you..." + 
+									"<br/><br/><br/>[OSRM]",
+"NOTIFICATION_LOCALIZATION_HEADER":	"Did you know? You can change the display language.",
+"NOTIFICATION_LOCALIZATION_BODY":	"You can use the pulldown menu in the upper left corner to select your favorite language. " +
+									"<br/><br/>" +
+									"Don't despair if you cannot find your language of choice. " +
+									"If you want, you can help to provide additional translations! " +
+									"Visit <a href='https://github.com/DennisSchiefer/Project-OSRM-Web'>here</a> for more information.",
+"NOTIFICATION_CLICKING_HEADER":		"Did you know? You can click on the map to set route markers.",
+"NOTIFICATION_CLICKING_BODY":		"You can click on the map with the left mouse button to set a source marker (green) or a target marker (red), " +
+									"if the source marker already exists. " +
+									"The address of the selected location will be displayed in the boxes to the left. " + 
+									"<br/><br/>" +
+									"You can delete a marker by clicking on it again with the left mouse button.",
+"NOTIFICATION_DRAGGING_HEADER":		"Did you know? You can drag each route marker on the map.",
+"NOTIFICATION_DRAGGING_BODY":		"You can drag a marker by clicking on it with the left mouse button and holding the button pressed. " +
+									"Then you can move the marker around the map and the route will be updated instantaneously. " +
+									"<br/><br/>" +
+									"You can even create intermediate markers by dragging them off of the main route! ",
+
 };
 
 // set GUI language on load
 if( OSRM.DEFAULTS.LANUGAGE_ONDEMAND_RELOADING == true )
-	OSRM.Localization.setLanguage("fr", true);
+	OSRM.Localization.setLanguage("eo", true);
